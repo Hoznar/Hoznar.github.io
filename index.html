@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="background" aria-hidden="true"></div>
+
+    <header class="header">
+        <div class="header-container">
+
+            <a href="#home" class="logo text-primary">C:\&gt;</a>
+
+            <nav class="navigation">
+                <ul class="menu">
+                    <li><a href="#home" class="nav-link active" data-i18n="navigation.home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="navigation.about">About me</a></li>
+                    <li><a href="#projects" class="nav-link" data-i18n="navigation.projects">Projects</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-links">
+                <button class="language-button" id="language-button">
+                    <span id="language-flag">🇬🇧</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="app">
+        <section id="home" class="page home-page">
+            <div class="home-container">
+                <div class="home-content">
+
+                    <h1 class="terminal-title text-primary">C:\Users\Snackie\Portfolio<span class="cursor">|</span></h1>
+
+                    <div class="name-line">
+                        <span class="name-line-decoration"></span>
+                        <span class="name text-primary">Jan Rádl</span>
+                        <span class="name-line-decoration"></span>
+                    </div>
+
+                    <p class="subtitle text-secondary" data-i18n="home.subtitle">Aspiring developer, with an interest in web development, design and games.</p>
+                    <div class="technology-list">
+                        <img class="technology-icon" src="resources/dotnet-icon.svg" alt=".NET icon">
+                        <img class="technology-icon logo-inverted" src="resources/unity-icon.svg" alt="Unity Engine icon">
+                        <img class="technology-icon" src="resources/html-icon.svg" alt="HTML5 icon">
+                        <img class="technology-icon" src="resources/css-icon.svg" alt="CSS3 icon">
+                    </div>
+
+                </div>
+                <div class="home-actions">
+                    <a href="resources/Jan-Radl-CV.pdf" class="button button-secondary" download data-i18n="home.download"><span class="button-symbol">↓</span>Download CV</a>
+                    <a href="#contact" class="button button-primary" id="contact-button" data-i18n="home.contact"><span class="button-symbol">→</span>Contact me</a>
+                </div>
+            </div>
+
+            <div class="contact-modal" id="contact-modal" hidden>
+                <div class="contact-overlay"></div>
+
+                <div class="contact-box">
+                    <h2 class="text-primary" data-i18n="contact.title">Contact me</h2>
+                    <p class="text-comment" data-i18n="contact.subtitle">// Get in touch.</p>
+
+                    <div class="contact-links">
+                        <a href="mailto:jan.radl478@gmail.com">
+                            <span class="text-primary">Email</span>
+                            <span class="text-secondary">jan.radl478@gmail.com</span>
+                        </a>
+
+                        <a href="https://github.com/Hoznar" target="_blank" rel="noopener">
+                            <span class="text-primary">GitHub</span>
+                            <span class="text-secondary">github.com/Hoznar</span>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/jan-r%C3%A1dl-805abb351/" target="_blank" rel="noopener">
+                            <span class="text-primary">LinkedIn</span>
+                            <span class="text-secondary">https://www.linkedin.com/in/jan-rádl-805abb351/</span>
+                        </a>
+                    </div>
+
+                    <button class="contact-close" id="contact-close" data-i18n="contact.close">Close</button>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- About me Section -->
+
+        <section id="about" class="page about-page" hidden>
+            <div class="about-container">
+
+                <div class="about-main">
+
+                    <div class="about-introduction">
+                        <h1 class="introduction-title text-primary" data-i18n="about.title">About me</h1>
+                        <p class="introduction-subtitle text-comment" data-i18n="about.subtitle">// A little bit about who I am.</p>
+                        <div class="about-profile">
+                            <img class="introduction-icon" src="resources/profile.jpg" alt="My profile picture.">
+                            <div class="introduction-content">
+                                <p class="introduction-text text-secondary"><span data-i18n="about.intro1">Hi! My name is </span><span class="text-primary">Jan Rádl</span>.</p>
+                                <p class="introduction-text text-secondary" data-i18n="about.intro2">I'm a recent graduate specializing in software development, with an interest in building desktop, web and game applications.
+                                    I enjoy both designing the frontend of an application and working on interesting systems on the backend.
+                                    </p>
+                                <p class="introduction-text text-secondary" data-i18n="about.intro3">I'm currently looking for a job where I can put what I've learned into practice.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-interests">
+                        <h2 class="about-title text-primary" data-i18n="about.outside">Outside of coding</h2>
+                        <div id="interests" class="interest-list">
+
+                            <!-- Filled with JS -->
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="about-side">
+
+                    <div class="about-education box">
+                        <h2 class="about-title text-primary" data-i18n="about.education">Education</h2>
+                        <div id="education" class="education">
+
+                            <!-- Filled with JS -->
+
+                        </div>
+                    </div>
+
+                    <div class="about-skills box">
+                        <h2 class="about-title text-primary" data-i18n="about.skills">Used during studies</h2>
+                        <div class="skills" id="skills">
+
+                            <!-- Filled with JS -->
+
+                        </div>
+                    </div>
+
+                    <div class="about-learning box">
+                        <h2 class="about-title text-primary" data-i18n="about.exploring">Currently exploring</h2>
+                        <div class="learning" id="learning">
+                            <img class="learning-icon" src="resources/lightbulb-icon.png" alt="Learning icon.">
+                            <div class="learning-content">
+                                <span class="learning-title text-primary">JavaScript</span>
+                                <p class="learning-desc text-comment" data-i18n="about.exploringDesc">Deepening my knowledge and working on personal projects with modern frontend tools.</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="page about-page" hidden>
+            <div class="projects-container">
+                <h1 class="projects-title text-primary" data-i18n="projects.title">Projects</h1>
+                <div class="projects-header">
+                    <span class="projects-subtitle text-comment" data-i18n="projects.subtitle">// Things I've built.</span>
+                    <span class="projects-subtitle text-comment" id="projects-count">0 projects</span>
+                </div>
+
+                <section class="project-list" id="project-list">
+                    <!-- Filled with JS -->
+                </section>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <span class="footer-text">© 2026 Snackie</span>
+        <span class="footer-status text-primary">STATUS: <span class="text-online">ONLINE</span>
+    </footer>
+
+    <!-- Javascripts -->
+    <script src="js/lang.js"></script>
+    <script src="js/about.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/contact.js"></script>
+
+</body>
+</html>

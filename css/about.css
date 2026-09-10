@@ -1,0 +1,368 @@
+.about-page {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+}
+
+.about-container {
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    min-height: 0;
+
+    box-sizing: border-box;
+
+    margin: 0 auto;
+    padding: 30px 50px;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(360px, 1fr);
+
+    column-gap: 60px;
+    row-gap: 35px;
+
+    align-content: start;
+}
+
+.about-main, .about-side {
+    min-width: 0;
+}
+
+.about-side {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(15px, 2vw, 40px);
+}
+
+.introduction-title {
+    font-size: clamp(3rem, 4vw, 4rem);
+    margin: 0;
+    line-height: 1;
+}
+
+.introduction-subtitle {
+    margin: 12px 0 30px;
+
+    font-size: 1.4rem;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+}
+
+.about-profile {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+
+    min-width: 0;
+}
+
+.about-profile > div {
+    min-width: 0;
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.introduction-icon {
+    width: clamp(160px, 18vw, 250px);
+    aspect-ratio: 1;
+    height: auto;
+
+    flex-shrink: 0;
+
+    border: 3px solid var(--text-primary);
+    object-fit: cover;
+}
+
+.introduction-content {
+    min-width: 0;
+}
+
+.introduction-text {
+    font-size: clamp(1.1rem, 1.5vw, 1.45rem);
+    line-height: 1.25;
+    margin: 0;
+}
+
+
+/* Interests */
+
+.about-interests h2 {
+    margin-top: 1em;
+    font-size: 1.8rem;
+}
+
+.about-title {
+    margin: 0 0 18px;
+    padding-bottom: 10px;
+
+    font-size: 1.6rem;
+    font-weight: 100;
+
+    border-bottom: 1px solid var(--border);
+}
+
+.interest-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));
+    gap: 10px;
+}
+
+.box {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    border: solid var(--border) 1px;
+    border-radius: 5px;
+    background-color: var(--background);
+    
+    padding: clamp(12px, 1.5vw, 18px);
+}
+
+.card {
+    min-width: 0;
+
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    background-color: var(--background);
+}
+
+.interest-card {
+    aspect-ratio: 1 / 1;
+    min-width: 0;
+    min-height: 0;
+    padding: 12px;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.interest-content {
+    width: 100%;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.interest-icon {
+    width: clamp(30px, 3vw, 45px);
+    height: clamp(30px, 3vw, 45px);
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.interest-text {
+    margin: 0 0 8px;
+    font-size: 1.3rem;
+    line-height: 1.1;
+}
+
+.interest-desc {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.2;
+}
+
+
+/* Education */
+
+.education p {
+    margin: 0;
+}
+
+.education h2 {
+    margin: 0;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    position: relative;
+    padding-left: 0;
+}
+
+.circle {
+    position: relative;
+    z-index: 1;
+
+    width: 18px;
+    height: 18px;
+
+    border: 3px solid var(--text-primary);
+    border-radius: 50%;
+    background-color: var(--background);
+
+    box-sizing: border-box;
+}
+
+.education::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+
+    left: 8px;
+    top: 9px;
+    bottom: 9px;
+
+    background-color: var(--border);
+}
+
+.education-content {
+    display: grid;
+    grid-template-columns: 30px minmax(0, 1fr) auto;
+    column-gap: 15px;
+
+    align-items: start;
+}
+
+.education-details {
+    min-width: 0;
+}
+
+.education-details h3 {
+    margin: 0 0 8px;
+    font-size: 1.5rem;
+    line-height: 1.1;
+}
+
+.education-details p {
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+.education-details p + p {
+    margin-top: 5px;
+}
+
+.education-year {
+    white-space: nowrap;
+    align-self: start;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+
+/* Skills */
+
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(8px, 1vw, 20px);
+}
+
+.skills-item {
+    border: solid var(--skill-color) 1px;
+    color: var(--skill-color);
+    border-radius: 5px;
+
+    box-sizing: border-box;
+    padding: 5px 10px;
+}
+
+
+/* Learning */
+
+.learning {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    min-width: 0;
+}
+
+.learning-content {
+    min-width: 0;
+}
+
+.learning-icon {
+    width: clamp(40px, 5vw, 60px);
+    height: auto;
+    flex-shrink: 0;
+}
+
+.learning-title {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.learning-desc {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+
+@media (max-width: 900px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 25px;
+    }
+
+    .about-profile {
+        align-items: flex-start;
+    }
+
+    .about-profile {
+        flex-direction: column;
+    }
+
+    .about-profile > div {
+        height: auto;
+    }
+
+    .introduction-icon {
+        width: 180px;
+        height: 180px;
+    }
+
+    .introduction-text {
+        font-size: 1.3rem;
+    }
+
+    .interest-list {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .interest-card {
+        aspect-ratio: auto;
+        min-height: 90px;
+
+        flex-direction: row;
+        justify-content: flex-start;
+
+        text-align: left;
+        gap: 15px;
+    }
+
+    .interest-icon {
+        width: 40px;
+        height: 40px;
+
+        flex-shrink: 0;
+        margin: 0;
+    }
+
+    .interest-content {
+        align-items: flex-start;
+        text-align: left;
+    }
+}
