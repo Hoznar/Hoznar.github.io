@@ -222,12 +222,12 @@ function setLanguage(language) {
     updateStaticTranslations();
     updateLanguageButton();
 
-    renderInterests();
-    renderEducation();
-    renderProjects();
+    document.dispatchEvent(new Event("languageChanged"));
 }
 
 document.querySelector("#language-button").addEventListener("click", () => {
     const newLanguage = currentLanguage === "en" ? "cs" : "en";
     setLanguage(newLanguage);
 });
+
+setLanguage(currentLanguage);

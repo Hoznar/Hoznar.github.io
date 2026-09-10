@@ -95,6 +95,11 @@ function renderSkills() {
     `).join("");
 }
 
+document.addEventListener("languageChanged", () => {
+    renderInterests();
+    renderEducation();
+});
+
 renderInterests();
 renderEducation();
 renderSkills();

@@ -169,4 +169,8 @@ function renderProjects() {
     document.querySelector("#projects-count").textContent = `${projects.length} project${projects.length !== 1 ? "s" : ""}`;
 }
 
+document.addEventListener("languageChanged", () => {
+    renderProjects();
+});
+
 renderProjects();
