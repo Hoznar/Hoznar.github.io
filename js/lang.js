@@ -128,7 +128,7 @@ const languages = {
         interests: {
             games: {
                 title: "Hry",
-                description: "Rád se ztrácím v jiných světech a vytvářím vlastní hry."
+                description: "Rád se ponořuji do jiných světů a občas si vytvářím vlastní hry."
             },
             pixelart: {
                 title: "Pixel Art",
@@ -136,7 +136,7 @@ const languages = {
             },
             video: {
                 title: "Střih Videa",
-                description: "Stříhám videa a přidávám do projektů vlastní nápady a úpravy."
+                description: "Baví mě stříhat videa a dávat jim nádech vlastního charakteru."
             },
             localisation: {
                 title: "Lokalizace",
@@ -162,7 +162,7 @@ const languages = {
             subtitle: "// Co jsem vytvořil.",
 
             cardGame: {
-                description: "Roguelike karetní hra zaměřená na průzkum, souboje a kombinování karet. Osobní projekt vytvořený pro učení se vývoji a designu her v Unity.",
+                description: "Roguelike karetní hra o průzkumu, soubojích a objevování silných kombinací karet. Osobní projekt, na kterém jsem se chtěl naučit více o vývoji a designu her v Unity.",
             },
             hubelino: {
                 description: "3D editor pro vytváření a navrhování kuličkových drah Hubelino. Vyvinuto v Unity jako moje bakalářská práce se zaměřením na usnadnění tvorby a úprav drah.",
