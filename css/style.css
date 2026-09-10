@@ -133,6 +133,12 @@ img {
     height: 25px;
 }
 
+.header-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .language-button {
     width: 50px;
     height: 50px;
@@ -463,5 +469,41 @@ main {
 @media (max-width: 600px) {
     .logo {
         visibility: hidden;
+    }
+
+    .header,
+    .header-container {
+        height: 70px;
+    }
+
+    .header-container {
+        padding: 0 20px;
+    }
+
+    .navigation {
+        margin: 0;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+
+    .nav-link {
+        font-size: 1.3rem;
+    }
+
+    .header-links {
+        gap: 8px;
+    }
+
+    .small-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .language-button {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
     }
 }
