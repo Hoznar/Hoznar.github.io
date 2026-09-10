@@ -33,5 +33,10 @@ navigationLinks.forEach(link => {
     });
 });
 
+window.addEventListener("popstate", () => {
+    const pageId = window.location.hash.substring(1) || "home";
+    showPage(pageId);
+});
+
 const initialPage = window.location.hash.substring(1) || "home";
 showPage(initialPage);
