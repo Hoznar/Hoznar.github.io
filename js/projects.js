@@ -42,7 +42,7 @@ const projects = [
         status: "completed",
         scope: "small",
         technologies: ["HTML", "CSS", "JavaScript"],
-        github: "#",
+        github: "https://github.com/Hoznar/Hoznar.github.io",
     },
     {
         title: "Small Website",
