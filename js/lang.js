@@ -76,8 +76,8 @@ const languages = {
             instagram: {
                 description: "A small social media app inspired by Instagram, built to learn ASP.NET Core, MVC, databases, authentication and authorization.",
             },
-            artapp: {
-                description: "A social media app for artists to share artwork and create commissions. An expansion of Mini Instagram, built to learn Blazor and work on a larger project.",
+            skype: {
+                description: "A desktop app for viewing and browsing old Skype conversations from main.db files. Built with WPF and C# to explore working with legacy data and SQLite.",
             },
             portfolio: {
                 description: "My personal portfolio website, built to showcase my projects and skills. It also serves as a way to practice HTML and CSS while applying what I've learned in JavaScript.",
@@ -170,8 +170,8 @@ const languages = {
             instagram: {
                 description: "Malá sociální síť inspirovaná Instagramem, vytvořená pro osvojení základů ASP.NET Core, MVC, databází, autentizace a autorizace.",
             },
-            artapp: {
-                description: "Sociální síť pro umělce ke sdílení jejich tvorby a vytváření zakázek. Rozšíření projektu Mini Instagram, vytvořené pro učení se Blazoru a práci na větším projektu.",
+            skype: {
+                description: "Desktopová aplikace pro prohlížení starých Skype konverzací ze souborů main.db. Vytvořeno v C# a WPF jako projekt zaměřený na práci se starými daty a SQLite.",
             },
             portfolio: {
                 description: "Moje osobní portfolio vytvořené pro prezentaci mých projektů a dovedností. Zároveň slouží k procvičení HTML a CSS a využití znalostí JavaScriptu.",

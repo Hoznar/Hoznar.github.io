@@ -18,6 +18,15 @@ const projects = [
         github: "https://github.com/Hoznar/Hubelino-Editor",
     },
     {
+        title: "SkypeConvosReader",
+        image: "resources/projects/skypereader.png",
+        description: "projects.skype.description",
+        status: "indev",
+        scope: "medium",
+        technologies: ["C#", "WPF", "SQL"],
+        github: "#",
+    },
+    {
         title: "Mini Instagram",
         image: "resources/projects/instagram.png",
         description: "projects.instagram.description",
@@ -25,15 +34,6 @@ const projects = [
         scope: "small",
         technologies: ["ASP.NET", "C#", "Bootstrap"],
         github: "https://github.com/Hoznar/Mini-Instagram",
-    },
-    {
-        title: "Art Sharing App",
-        image: "resources/projects/wip.png",
-        description: "projects.artapp.description",
-        status: "indev",
-        scope: "medium",
-        technologies: ["ASP.NET", "Blazor", "C#", "Bootstrap"],
-        github: "#",
     },
     {
         title: "Portfolio Website",
@@ -94,6 +94,9 @@ const technologies = {
     "Blazor": {
         color: "#9B5DE5"
     },
+    "WPF": {
+        color: "#9B5DE5"
+    },
     "HTML": {
         color: "#E44D26"
     },
@@ -114,6 +117,9 @@ const technologies = {
     },
     "Aseprite": {
         color: "#9B4DFF"
+    },
+    "SQL": {
+        color: "#e87d0d"
     },
 };
 
