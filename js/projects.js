@@ -24,7 +24,7 @@ const projects = [
         status: "indev",
         scope: "medium",
         technologies: ["C#", "WPF", "SQL"],
-        github: "#",
+        github: "https://github.com/Hoznar/SkypeConvosReader",
     },
     {
         title: "Mini Instagram",
